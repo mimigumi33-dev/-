@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#140d23" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ヤンデレライト" />
+  <title>ヤンデレライト</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game" class="game" aria-live="polite">
+    <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+    <header class="topbar">
+      <button id="home-button" class="icon-button" aria-label="タイトルへ戻る">⌂</button>
+      <div class="brand"><span>YANDERE</span>LIGHT</div>
+      <button id="sound-button" class="icon-button" aria-label="BGMを切り替える">♬</button>
+    </header>
+
+    <section id="title-screen" class="screen title-screen">
+      <p class="eyebrow">FALL INTO A BEAUTIFUL CAGE</p>
+      <h1>ヤンデレ<span>ライト</span></h1>
+      <p class="subtitle">甘くて、少しだけ壊れた世界へ。</p>
+      <button id="start-button" class="primary-button">はじめる <i>→</i></button>
+      <p class="tiny">※この物語に、普通のハッピーエンドはありません。</p>
+    </section>
+
+    <section id="story-screen" class="screen story-screen hidden">
+      <div id="visual" class="visual sky" role="img" aria-label="ゲームの場面"></div>
+      <div id="glitch" class="glitch-overlay"></div>
+      <div id="meter" class="meter hidden">
+        <div class="meter-label"><span>YANDERE LEVEL</span><b id="meter-value">0%</b></div>
+        <div class="meter-track"><div id="meter-fill" class="meter-fill"></div></div>
+        <small id="meter-status">安全圏</small>
+      </div>
+      <section class="dialogue-panel">
+        <div id="speaker" class="speaker"></div>
+        <p id="text" class="dialogue-text"></p>
+        <div id="choices" class="choices"></div>
+        <button id="next-button" class="next-button hidden">つづける <span>→</span></button>
+      </section>
+    </section>
+
+    <section id="ending-screen" class="screen ending-screen hidden">
+      <p id="ending-kind" class="eyebrow">BAD END</p>
+      <h2 id="ending-title"></h2>
+      <p id="ending-copy"></p>
+      <div id="ending-mark" class="ending-mark"></div>
+      <button id="restart-button" class="primary-button">もう一度、落ちる <i>↻</i></button>
+      <button id="route-button" class="text-button">別の場所へ落ちる</button>
+    </section>
+  </main>
+  <!-- 差し替え用: assets/bgm/ に BGM を置き、script.js の AUDIO_PATH を設定してください -->
+  <audio id="bgm" loop></audio>
+  <script src="script.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js');</script>
+</body>
+</html>

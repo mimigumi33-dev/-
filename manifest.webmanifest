@@ -1,0 +1,13 @@
+{
+  "name": "ヤンデレライト",
+  "short_name": "ヤンデレライト",
+  "description": "甘くて、少しだけ壊れた世界へ。",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#100a1c",
+  "theme_color": "#140d23",
+  "lang": "ja",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
