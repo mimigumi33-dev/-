@@ -16,3 +16,4 @@ button { font:inherit; cursor:pointer; }
 @keyframes float{to{transform:translate(4rem,2rem) scale(1.15)}}@keyframes shake{50%{transform:translateX(2px)}}@keyframes glitch{50%{transform:translate(3px,-1px)}}
 @media (max-width:500px){.topbar{height:58px;padding:0 12px}.screen{min-height:calc(100vh - 58px)}.dialogue-panel{min-height:330px}.visual{bottom:0}.meter{top:65px;right:12px}.title-screen{padding-bottom:70px}}
 .title-screen h1{font-size:clamp(42px,13vw,92px);white-space:nowrap}
+.title-screen h1{font-size:clamp(34px,11vw,92px);white-space:nowrap}
