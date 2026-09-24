@@ -1,4 +1,4 @@
-const CACHE_NAME = "yandere-light-v5";
+const CACHE_NAME = "yandere-light-v6";
 const APP_FILES = ["./", "./index.html", "./style.css", "./script.js", "./manifest.webmanifest", "./icon.svg"];
 
 self.addEventListener("install", event => {
