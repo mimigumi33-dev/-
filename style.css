@@ -17,3 +17,4 @@ button { font:inherit; cursor:pointer; }
 @media (max-width:500px){.topbar{height:58px;padding:0 12px}.screen{min-height:calc(100vh - 58px)}.dialogue-panel{min-height:330px}.visual{bottom:0}.meter{top:65px;right:12px}.title-screen{padding-bottom:70px}}
 .title-screen h1{font-size:clamp(42px,13vw,92px);white-space:nowrap}
 .title-screen h1{font-size:clamp(34px,11vw,92px);white-space:nowrap}
+.ending-screen #ending-kind{font:700 clamp(42px,13vw,78px) "DotGothic16",sans-serif;line-height:1;letter-spacing:.12em;white-space:nowrap;color:#fff1f7;margin:0 0 24px;padding:12px 20px 16px;border:2px solid #ff7aaf;background:#5a1038;box-shadow:0 0 0 5px #ff7aaf22,0 0 34px #ff2f80aa,inset 0 0 18px #ff5c9b55;text-shadow:3px 3px 0 #a90f50,0 0 18px #ff8dbd;transform:rotate(-3deg)}
